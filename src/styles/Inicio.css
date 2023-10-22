@@ -1,0 +1,21 @@
+.perfil-usuario {
+  display: flex;
+  height: 80vh;
+}
+
+.info-personal {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px;
+  background-color: #f0f0f0; 
+}
+
+.info-varia {
+  flex: 0 0 20%;
+  padding: 10px; 
+  background-color: #fff; 
+}
+
+.botones {
+  margin-top: 10px; /* Agrega espacio entre los botones y la descripción */
+}

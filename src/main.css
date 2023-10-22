@@ -1,0 +1,25 @@
+:root{
+    --c1: #bdb685;
+    --c2: #b48e67;
+    --c3: #7ecd70;
+    --c4: #6fbdc5;
+    --c5: #8e8ae3;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+}
+
+#inicio {
+  width: 100vw;
+  height: 100vh;
+  padding: 20%;
+
+  box-sizing: border-box;
+
+  background-color: var(--c1); 
+}
