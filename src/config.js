@@ -1,6 +1,6 @@
 export default {
     web: {
-      titulo: "BaboonFile",
+      titulo: "Baboonfile",
       icono: "../assets/favicon.png",
       fondo: "../assets/background.png",
     },
