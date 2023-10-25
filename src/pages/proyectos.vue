@@ -80,12 +80,10 @@ export default {
         width: 600,
         padding: '3em',
         showConfirmButton: false,
-        // confirmButtonColor: style.getPropertyValue('--bg1'),
-        // confirmButtonText: 'GitHub',
-        // showCancelButton: true,
-        // cancelButtonColor: style.getPropertyValue('--bg1'), 
-        // cancelButtonText: 'Salir',
-        // cancelButtonPosition: 'top-end',
+        showCancelButton: true,
+        cancelButtonColor: style.getPropertyValue('--bg1'), 
+        cancelButtonText: 'Salir',
+        cancelButtonPosition: 'top-end',
         color: style.getPropertyValue('--txt2'), 
         background: style.getPropertyValue('--bg2') 
       })
