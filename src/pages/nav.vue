@@ -9,7 +9,7 @@
        <ul class="navbar-nav ms-auto">
          <li class="nav-item mx-0 mx-lg-1"><a class="py-3 px-0 px-lg-3 rounded header-txt" href="#header">Inicio</a></li>
          <li class="nav-item mx-0 mx-lg-1"><a class="py-3 px-0 px-lg-3 rounded header-txt" href="#proyectos">Proyectos</a></li>
-         <li class="nav-item mx-0 mx-lg-1"><a class="py-3 px-0 px-lg-3 rounded header-txt" href="">About Me</a></li>
+         <!-- <li class="nav-item mx-0 mx-lg-1"><a class="py-3 px-0 px-lg-3 rounded header-txt" href="">About Me</a></li> -->
         </ul>
        </div>
     </div>
@@ -19,5 +19,8 @@
 <style>
   nav a{
     text-decoration: none !important;
+  }
+  nav a:hover{
+    color: var(--bg1) !important;
   }
 </style>
