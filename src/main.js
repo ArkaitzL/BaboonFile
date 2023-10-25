@@ -8,6 +8,7 @@ import proyectos from './pages/proyectos.vue'
 import nav from './pages/nav.vue'
 import footer from './pages/footer.vue'
 
+
 createApp(header).mount('#header')
 createApp(proyectos).mount('#proyectos')
 createApp(nav).mount('#nav')

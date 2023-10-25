@@ -1,6 +1,7 @@
 <script setup>
 import config from "../config.js"
 import axios from "axios"
+import Swal from 'sweetalert2'
 </script>
 
 <template>
