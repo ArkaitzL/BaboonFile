@@ -5,16 +5,8 @@
     --txt2: #252525;
     --header-bg: #2C3E50;
     --header-txt: #FFFFFF;
-
     --select-bg: #edb75a;
     --select-txt: #fff;
-
-    /* --bg1: #09ff00;
-    --txt1: #000000;
-    --bg2: #ff0000;
-    --txt2: #ffffff;
-    --header-bg: #eeff00;
-    --header-txt: #000000; */
 }
 
 ::selection{
