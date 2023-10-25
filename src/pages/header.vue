@@ -4,16 +4,14 @@ import axios from "axios"
 </script>
 
 <template>
- <header v-if="usuario" class="text-center text-white bg-primary masthead">
+ <header v-if="usuario" class="text-center text-white masthead">
         <div class="container">
             <img class="img-fluid d-block mx-auto mb-5 rounded-circle w-25" :src="usuario.avatar_url">
-            <a :href="usuario.html_url" target="_blank">
-              <h1 v-if="usuario.name">{{ usuario.name }}</h1>
-              <h1 v-else>Sin nombre</h1>
-            </a>
+            <h1 v-if="usuario.name" class="txt1"><a :href="usuario.html_url" target="_blank">{{ usuario.name }}</a></h1>
+            <h1 v-else class="txt1">Sin nombre</h1>
             <hr class="star-light">
-            <h2 v-if="usuario.name" class="font-weight-light mb-0">{{ usuario.bio }}</h2>
-            <h2 v-else class="font-weight-light mb-0">--</h2>
+            <h2 v-if="usuario.name" class="font-weight-light mb-0 txt1">{{ usuario.bio }}</h2>
+            <h2 v-else class="font-weight-light mb-0 txt1">--</h2>
         </div>
     </header>
 </template>
@@ -29,6 +27,7 @@ header a {
 header a:hover {
   text-decoration: none !important;
   color: white !important;
+  text-decoration: underline !important;
 }
 </style>
 

@@ -6,18 +6,13 @@ import axios from "axios"
 <template>
   <section v-if="repositorios" id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">PROYECTOS</h2>
+            <h2 class="text-uppercase text-center txt2">PROYECTOS</h2>
             <hr class="star-dark mb-5">
             <div class="row">
               <article v-for="repo in repositorios" :key="repo.id" class="col-md-6 col-lg-4">
-                <a class="d-block mx-auto portfolio-item">
-                  <!-- Hover -->
-                  <!-- <div class="d-flex portfolio-item-caption position-absolute h-100 w-100 bg-none">
-                    <div class="text-center text-white my-auto portfolio-item-caption-content w-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>                    </div>
-                  </div>        -->
-                  <h4 class="nombre">{{ repo.name }}</h4>             
-                  <img class="img-fluid" src="/src/assets/fondo.png">
+                <a class="d-block mx-auto portfolio-item bg1">
+                  <h4 class="nombre txt1">{{ repo.name }}</h4>             
+                  <!-- <img class="img-fluid" src="/src/assets/fondo.png"> -->
                 </a>
               </article>
             </div>
@@ -26,22 +21,17 @@ import axios from "axios"
 </template>
 
 <style>
-  .nombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-  }
-
   .portfolio-item {
-    opacity: 1;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    height: 25vh;
+    padding: 10%;
+    text-decoration: none;;
+
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
   }
   .portfolio-item:hover {
-    opacity: 0.75;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scale(1.015);
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
   }
 </style>

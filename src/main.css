@@ -1,4 +1,65 @@
+:root{
+    --bg1: #18BC9C;
+    --txt1: #FFFFFF;
+    --bg2: #FFFFFF;
+    --txt2: #252525;
+    --header-bg: #2C3E50;
+    --header-txt: #FFFFFF;
+
+    --select-bg: #edb75a;
+    --select-txt: #fff;
+
+    /* --bg1: #09ff00;
+    --txt1: #000000;
+    --bg2: #ff0000;
+    --txt2: #ffffff;
+    --header-bg: #eeff00;
+    --header-txt: #000000; */
+}
+
 ::selection{
-    background-color: #edb75a;
-    color: #fff;
+    background-color: var(--select-bg) !important;
+    color: var(--select-txt) !important;
+}
+
+.bg1{
+    background-color: var(--bg1) !important;
+}
+.txt1 {
+    color: var(--txt1) !important;
+}
+.star-light{
+    background-color: var(--bg1) !important;
+    color: var(--txt1) !important;
+    border-color: var(--txt1) !important;
+}
+hr.star-light:after {
+    color: var(--txt1) !important;
+    background-color:  var(--bg1) !important;
+}
+
+.bg2{
+    background-color: var(--bg2) !important;
+}
+.txt2 {
+    color: var(--txt2) !important;
+}
+.star-dark{
+    background-color: var(--bg2) !important;
+    color: var(--txt2) !important;
+    border-color: var(--txt2) !important;
+}
+hr.star-dark:after {
+    color: var(--txt2) !important;
+    background-color:  var(--bg2) !important;
+}
+
+.header-bg{
+    background-color: var(--header-bg) !important;
+}
+.header-txt {
+    color: var(--header-txt) !important;
+}
+.link{
+    color: var(--bg1);
 }
