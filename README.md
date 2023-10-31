@@ -25,8 +25,14 @@ Para personalizar la información de tu portfolio, edita el archivo `src/config.
 2. En la sección de configuración de Web, ingresa el nombre de tu pagina.
 3. En la sección de configuración de GitHub, ingresa tu nombre de usuario de GitHub.
 4. En la sección de configuracion de Colores, cambia el valor hexadecimal predefinido por tu color preferido.
-   - bg1: Fondo de la primera seccion de la pagina.
-   - txt1: Texto de la primera seccion de la pagina.
+   - `bg1`: Fondo de la primera sección de la página.
+   - `txt1`: Texto de la primera sección de la página.
+   - `bg2`: Fondo de la segunda sección de la página.
+   - `txt2`: Texto de la segunda sección de la página.
+   - `header-bg`: Fondo del encabezado y del pie de pagina.
+   - `header-txt`: Texto del encabezado y del pie de pagina.
+   - `select-bg`: Fondo de la selección.
+   - `select-txt`: Texto de la selección.
 6. Guarda el archivo y verás tu portfolio completaente terminado.
 
 ## Ejemplo en Vivo
