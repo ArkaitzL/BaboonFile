@@ -1,30 +1,14 @@
 # BaboonFile
 
-Esta es una plantilla de portfolio diseñada para ser personalizable y fácil de usar. Puedes modificar la apariencia y el contenido de tu portfolio ajustando los archivos `/config.js` y `/public/favicon.svg`.
+Esta es una plantilla de portfolio diseñada para ser personalizable y fácil de usar. Puedes modificar la apariencia y el contenido de tu portfolio ajustando los archivos `src/config.js` y `public/favicon.svg`.
 
 ## Características
 
 - **Personalización Sencilla:** Cambia la apariencia y el contenido de tu portfolio con facilidad utilizando archivos de configuración.
 - **Sincronización con GitHub:** Tus proyectos de GitHub se mostrarán automáticamente en tu portfolio.
-- **Colores Personalizados:** Define tus propios colores utilizando el archivo `/config.js`.
+- **Colores Personalizados:** Define tus propios colores utilizando el archivo `src/config.js`.
 - **Diseño Responsivo:** Tu portfolio se verá genial en dispositivos móviles y de escritorio.
 - **Fácil Implementación:** Simplemente clona el repositorio y personaliza según tus necesidades.
-
-### Configuración
-
-Para personalizar la información de tu portfolio, edita el archivo `/config.js`. Puedes cambiar tu nombre, descripción, enlaces a redes sociales y más.
-
-### Colores
-
-Define tus propios colores utilizando el archivo `/config.js`. Reemplaza los valores existentes con tus colores preferidos.
-
-### Sincronización con GitHub
-
-Para que tus proyectos de GitHub se muestren automáticamente en tu portfolio, sigue estos pasos:
-
-1. Abre el archivo `/config.js`.
-2. En la sección de configuración de GitHub, ingresa tu nombre de usuario de GitHub y el nombre de tu repositorio.
-3. Guarda el archivo y verás tus proyectos en la sección correspondiente de tu portfolio.
 
 ## Cómo Usar
 
@@ -33,11 +17,21 @@ Para que tus proyectos de GitHub se muestren automáticamente en tu portfolio, s
 3. Agrega tus proyectos y contenido a medida que desees.
 4. Implementa tu portfolio en un servidor web o plataforma de alojamiento.
 
+## Configuración
+
+Para personalizar la información de tu portfolio, edita el archivo `src/config.js`. Puedes cambiar tu nombre, el nombre de tu pagina y los colores. Reemplaza los valores existentes con tus valores preferidos siguiendo estos pasos:
+
+1. Abre el archivo `src/config.js`.
+2. En la sección de configuración de Web, ingresa el nombre de tu pagina.
+3. En la sección de configuración de GitHub, ingresa tu nombre de usuario de GitHub.
+4. En la sección de configuracion de Colores, cambia el valor hexadecimal predefinido por tu color preferido.
+   - bg1: Fondo de la primera seccion de la pagina.
+   - txt1: Texto de la primera seccion de la pagina.
+6. Guarda el archivo y verás tu portfolio completaente terminado.
+
 ## Ejemplo en Vivo
 
 Puedes ver un ejemplo en vivo de esta plantilla [aquí](https://baboon.games/).
-
-## Capturas de Pantalla
 
 ![Captura de Pantalla 1](/screenshots/screenshot1.png)
 ![Captura de Pantalla 2](/screenshots/screenshot2.png)
