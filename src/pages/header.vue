@@ -24,7 +24,7 @@ header{
 }
 header a {
   text-decoration: none !important;
-  color: white !important;
+  color:  var(--txt1) !important;
 }
 .hover-line {
     position: relative;
@@ -40,9 +40,9 @@ header a {
     position: absolute;
     bottom: 0;
     width: 50%;
-    height: 0.1em;
+    height: 0.05em;
     background-color: var(--txt1);
-    transition: width 200ms ease, transform 200ms ease;
+    transition: width 300ms ease, transform 300ms ease;
 }
   
 .hover-line::before {

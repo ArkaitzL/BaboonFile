@@ -1,7 +1,11 @@
+<script setup>
+import config from "../config.js"
+</script>
+
 <template>
   <nav class="header-bg navbar navbar-expand-lg fixed-top text-uppercase navbar-light" id="mainNav">
     <div class="container">
-      <a class="navbar-brand header-txt" href="#page-top">baboonfile</a>
+      <a class="navbar-brand header-txt" href="#page-top">{{ config.web.titulo }}</a>
       <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </button>

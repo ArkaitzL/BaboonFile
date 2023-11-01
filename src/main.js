@@ -1,26 +1,27 @@
+//Import de vue
 import { createApp } from 'vue'
-
+//Main css + config
 import './main.css'
 import config from "./config.js"
-
+//Import de paginas
 import header from './pages/header.vue'
 import proyectos from './pages/proyectos.vue'
 import nav from './pages/nav.vue'
 import footer from './pages/footer.vue'
-
-
+//Aplicacion de paginas
 createApp(header).mount('#header')
 createApp(proyectos).mount('#proyectos')
 createApp(nav).mount('#nav')
 createApp(footer).mount('#footer')
 
+//Cambiar titulo de la pagina
+document.title = config.web.titulo;
+
+//Cambiar colores de la pagina
 const style = document.documentElement.style;
 
-style.setProperty('--bg1', config.colores['--bg1'])
-style.setProperty('--txt1', config.colores['--txt1'])
-style.setProperty('--bg2', config.colores['--bg2'])
-style.setProperty('--txt2', config.colores['--txt2'])
-style.setProperty('--header-bg', config.colores['--header-bg'])
-style.setProperty('--header-txt', config.colores['--header-txt'])
-style.setProperty('--select-bg', config.colores['--select-bg'])
-style.setProperty('--select-txt', config.colores['--select-txt'])
+for (const key in config.colores) {
+    if (config.colores.hasOwnProperty(key)) {
+        style.setProperty(key, config.colores[key]);
+    }
+}

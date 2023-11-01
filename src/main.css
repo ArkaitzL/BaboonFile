@@ -55,3 +55,6 @@ hr.star-dark:after {
 .link{
     color: var(--bg1);
 }
+.link:hover{
+    color: var(--bg1);
+}

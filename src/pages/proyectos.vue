@@ -65,7 +65,12 @@ export default {
         <div class="repo-info">
           <h1 class="repo-name">${repo.name}</h1>
           <hr class="star-dark">
-          <div class="repo-description">${repo.description ? repo.description + ` Este repositorio ha sido creado con <spam class="link"> ${repo.language} </spam>.` : 'No hay descripción disponible.'}
+          <div class="repo-description">
+            ${repo.description 
+              ? repo.language
+                ? `${repo.description } Este repositorio ha sido creado con <spam class="link"> ${repo.language} </spam>.` 
+                : repo.description
+              : 'No hay descripción disponible.'}
           </div>
           <br>
           <br>
@@ -76,7 +81,7 @@ export default {
           </div>
         </div>
         `,
-        footer: `<a href="${repo.html_url}" target="_blank">Ver el proyecto</a>`,
+        footer: `<a href="${repo.html_url}" class="link" target="_blank">Ver el proyecto</a>`,
         width: 600,
         padding: '3em',
         showConfirmButton: false,
@@ -87,11 +92,6 @@ export default {
         color: style.getPropertyValue('--txt2'), 
         background: style.getPropertyValue('--bg2') 
       })
-      // .then((res) => {
-      //   if (res.isConfirmed) {
-      //     window.open(repo.html_url, '_blank');
-      //   }
-      // });
     }
   }
 };
