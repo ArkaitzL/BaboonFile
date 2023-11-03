@@ -7,6 +7,7 @@
     --header-txt: #FFFFFF;
     --select-bg: #edb75a;
     --select-txt: #fff;
+    --scrollbar: #fff;
 }
 
 ::selection{
@@ -53,8 +54,23 @@ hr.star-dark:after {
     color: var(--header-txt) !important;
 }
 .link{
-    color: var(--bg1);
+    color: var(--esp);
 }
 .link:hover{
-    color: var(--bg1);
+    color: var(--esp);
+}
+.esp{
+  color: var(--esp) !important;
+}
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    background: var(--scrollbar-bg); /* Color del pulgar */
+    width: 12px;
+    opacity: 0;
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar); /* Color del pulgar */
+    border-radius: 6px; /* Borde redondeado */
 }

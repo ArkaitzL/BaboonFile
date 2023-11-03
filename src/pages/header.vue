@@ -7,8 +7,8 @@ import axios from "axios"
  <header v-if="usuario" class="text-center text-white masthead">
         <div class="container">
             <img class="img-fluid d-block mx-auto mb-5 rounded-circle w-25" :src="usuario.avatar_url">
-            <h1 v-if="usuario.name" class="txt1">
-              <a class="hover-line" :href="usuario.html_url" target="_blank">{{ usuario.name }}</a>
+            <h1 v-if="usuario.name" class="txt1 d-flex align-items-center justify-content-center">
+              Hola soy&nbsp;<a class="hover-line esp" :href="usuario.html_url" target="_blank">{{ usuario.name }}</a>
             </h1>
             <h1 v-else class="txt1">Sin nombre</h1>
             <hr class="star-light">
@@ -20,7 +20,7 @@ import axios from "axios"
 
 <style>
 header{
-  height: 100vh;
+  min-height: 100vh;
 }
 header a {
   text-decoration: none !important;
