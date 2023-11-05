@@ -62,6 +62,8 @@ hr.star-dark:after {
 .esp{
   color: var(--esp) !important;
 }
+
+@media only screen and (min-width: 600px) {
 /* Estilo de la barra de desplazamiento */
 ::-webkit-scrollbar {
     background: var(--scrollbar-bg); /* Color del pulgar */
@@ -74,3 +76,5 @@ hr.star-dark:after {
     background: var(--scrollbar); /* Color del pulgar */
     border-radius: 6px; /* Borde redondeado */
 }
+}
+

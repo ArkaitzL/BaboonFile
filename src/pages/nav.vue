@@ -3,7 +3,7 @@ import config from "../config.js"
 </script>
 
 <template>
-  <nav class="header-bg navbar navbar-expand-lg fixed-top text-uppercase navbar-light" id="mainNav">
+  <nav class="header-bg navbar navbar-expand-lg fixed-top text-uppercase navbar-dark" id="mainNav">
     <div class="container">
       <h1 class="navbar-brand header-txt esp" href="#page-top">{{ config.web.titulo }}</h1>
       <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
