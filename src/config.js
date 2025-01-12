@@ -14,13 +14,15 @@ export default {
       '--txt1': '#FFFFFF',  
       '--bg2': '#252525',     
       '--txt2': '#FFFFFF',   
-      '--esp': '#7A4988',  
+      '--esp': '#fb923c',  
+      '--esp2': '#fdba74',  
       '--header-bg': '#111',   
       '--header-txt': '#FFFFFF', 
-      '--select-bg': '#7A4988',  
+      '--select-bg': '#fdba74',  
       '--select-txt': '#fff',  
       '--scrollbar': '#FFFFFF',  
-      '--scrollbar-bg': '#252525'  
+      '--scrollbar-bg': '#252525',
+      '--link': '#6ee7b7',  
     }
   };
 

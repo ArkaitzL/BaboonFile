@@ -2,12 +2,16 @@
     --bg1: #18BC9C;
     --txt1: #FFFFFF;
     --bg2: #FFFFFF;
+    --esp: #fb923c;
+    --esp2: #fdba74;
     --txt2: #252525;
     --header-bg: #2C3E50;
     --header-txt: #FFFFFF;
     --select-bg: #edb75a;
     --select-txt: #fff;
     --scrollbar: #fff;
+    --scrollbar-bg: #fff;
+    --link: #252525;
 }
 
 ::selection{
@@ -54,13 +58,16 @@ hr.star-dark:after {
     color: var(--header-txt) !important;
 }
 .link{
-    color: var(--esp);
+    color: var(--link);
 }
 .link:hover{
     color: var(--esp);
 }
 .esp{
   color: var(--esp) !important;
+}
+.esp2{
+    color: var(--esp2) !important;
 }
 
 @media only screen and (min-width: 600px) {

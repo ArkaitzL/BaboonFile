@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 <template>
   <section v-if="repositorios" id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-uppercase text-center txt2">PROYECTOS</h2>
+            <h2 class="text-uppercase text-center txt2 esp">PROYECTOS</h2>
             <hr class="star-dark mb-5">
             <div class="row">
               <article v-for="repo in repositorios" :key="repo.id" class="col-md-6 col-lg-4">
@@ -68,7 +68,7 @@ export default {
           <div class="repo-description">
             ${repo.description 
               ? repo.language
-                ? `${repo.description } Este repositorio ha sido creado con <spam class="link"> ${repo.language} </spam>.` 
+                ? `${repo.description } Este repositorio ha sido creado con <spam class="link esp2"> ${repo.language} </spam>.` 
                 : repo.description
               : 'No hay descripción disponible.'}
           </div>
@@ -86,7 +86,7 @@ export default {
         padding: '3em',
         showConfirmButton: false,
         showCancelButton: true,
-        cancelButtonColor: style.getPropertyValue('--bg1'), 
+        cancelButtonColor: style.getPropertyValue('--esp'), 
         cancelButtonText: 'Salir',
         cancelButtonPosition: 'top-end',
         color: style.getPropertyValue('--txt2'), 
